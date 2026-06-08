@@ -1,0 +1,103 @@
+{
+  "description": "AI 重量级账号列表 - 重点关注实验室、创始人、核心研究者、基础设施玩家。优先级越高，单独 from: 查询权重越高。",
+  "updated": "2026-06-08",
+  "accounts": [
+    {
+      "handle": "sama",
+      "name": "Sam Altman",
+      "category": "founder",
+      "lab": "OpenAI",
+      "priority": 10,
+      "notes": "OpenAI 战略方向、产品发布"
+    },
+    {
+      "handle": "OpenAI",
+      "name": "OpenAI",
+      "category": "lab",
+      "lab": "OpenAI",
+      "priority": 10,
+      "notes": "官方发布"
+    },
+    {
+      "handle": "AnthropicAI",
+      "name": "Anthropic",
+      "category": "lab",
+      "lab": "Anthropic",
+      "priority": 10,
+      "notes": "Claude 系列、安全研究"
+    },
+    {
+      "handle": "demishassabis",
+      "name": "Demis Hassabis",
+      "category": "founder",
+      "lab": "Google DeepMind",
+      "priority": 9,
+      "notes": "AGI 愿景、科学应用"
+    },
+    {
+      "handle": "DeepMind",
+      "name": "DeepMind",
+      "category": "lab",
+      "lab": "Google DeepMind",
+      "priority": 9,
+      "notes": "研究突破"
+    },
+    {
+      "handle": "xai",
+      "name": "xAI",
+      "category": "lab",
+      "lab": "xAI",
+      "priority": 9,
+      "notes": "Grok 系列"
+    },
+    {
+      "handle": "elonmusk",
+      "name": "Elon Musk",
+      "category": "founder",
+      "lab": "xAI / Tesla AI",
+      "priority": 9,
+      "notes": "xAI 方向、真实世界 AI"
+    },
+    {
+      "handle": "karpathy",
+      "name": "Andrej Karpathy",
+      "category": "researcher",
+      "lab": "Independent / Eureka Labs",
+      "priority": 8,
+      "notes": "深度洞见、教育、模型理解"
+    },
+    {
+      "handle": "DarioAmodei",
+      "name": "Dario Amodei",
+      "category": "founder",
+      "lab": "Anthropic",
+      "priority": 8,
+      "notes": "Anthropic 领导层观点"
+    },
+    {
+      "handle": "NVIDIAAIInfra",
+      "name": "NVIDIA AI Infrastructure",
+      "category": "infra",
+      "lab": "NVIDIA",
+      "priority": 7,
+      "notes": "AI 算力、内存、工厂基础设施"
+    },
+    {
+      "handle": "ylecun",
+      "name": "Yann LeCun",
+      "category": "researcher",
+      "lab": "Meta AI",
+      "priority": 7,
+      "notes": "开放研究、架构观点"
+    }
+  ],
+  "chinese_focus": [
+    {
+      "handle": "RnaudBertrand",
+      "name": "Arnaud Bertrand",
+      "category": "observer",
+      "priority": 6,
+      "notes": "中国AI vs 美国 客观分析，常发高质量图表"
+    }
+  ]
+}

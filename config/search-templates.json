@@ -1,0 +1,53 @@
+{
+  "description": "预定义的高信号搜索模板，用于每日重量级AI内容抓取。每天使用时把 {since} 替换为昨日日期 (YYYY-MM-DD)",
+  "templates": [
+    {
+      "id": "vip-labs-latest",
+      "name": "VIP Labs & Founders (from: + 最近)",
+      "query_template": "(from:sama OR from:OpenAI OR from:AnthropicAI OR from:demishassabis OR from:DeepMind OR from:xai OR from:elonmusk OR from:karpathy OR from:DarioAmodei) since:{since}",
+      "mode": "Latest",
+      "limit": 15,
+      "why": "直接来自最核心实验室和创始人的内容，信噪比最高，即使 engagement 低也值得看"
+    },
+    {
+      "id": "high-engagement-ai",
+      "name": "高互动AI重量级讨论",
+      "query_template": "(AI OR LLM OR \"frontier model\" OR Grok OR Claude OR \"o3\" OR \"AI model\") (release OR released OR announce OR announced OR \"new model\" OR \"just dropped\" OR paper OR arxiv OR breakthrough OR SOTA OR \"training run\" OR \"AI factory\") min_faves:250 -filter:replies since:{since}",
+      "mode": "Latest",
+      "limit": 10,
+      "why": "全网高赞的AI重要事件，过滤回复减少噪音"
+    },
+    {
+      "id": "infra-compute",
+      "name": "基础设施与算力 (NVIDIA, 内存, 集群)",
+      "query_template": "(NVIDIA OR \"SK Hynix\" OR HBM OR \"AI factory\" OR \"training cluster\" OR Rubin OR Blackwell) (AI OR memory OR partnership) min_faves:200 since:{since}",
+      "mode": "Latest",
+      "limit": 8,
+      "why": "底层硬件和算力进展往往预示下一代模型能力"
+    },
+    {
+      "id": "chinese-ai-surge",
+      "name": "中国AI崛起信号 (DeepSeek, Kimi, MiniMax 等)",
+      "query_template": "(DeepSeek OR Kimi OR MiniMax OR \"Chinese AI\" OR \"中国AI\") (model OR release OR V4 OR M2 OR \"open source\") min_faves:150 since:{since}",
+      "mode": "Latest",
+      "limit": 8,
+      "why": "2026 年中国模型在性价比、开源、实际使用上快速追赶甚至反超，需重点跟踪"
+    },
+    {
+      "id": "research-papers",
+      "name": "重要研究与论文信号",
+      "query_template": "(arxiv OR paper OR \"research paper\" OR \"new paper\") (AI OR LLM OR \"multimodal\" OR agent OR reasoning) min_faves:100 since:{since}",
+      "mode": "Latest",
+      "limit": 6,
+      "why": "学术/工业界有实质进展的信号"
+    }
+  ],
+  "semantic_queries": [
+    {
+      "id": "semantic-major-updates",
+      "query": "major AI model releases, important new research breakthroughs, frontier lab strategic announcements, significant infrastructure or partnership news",
+      "limit": 6,
+      "notes": "语义搜索补充关键词可能漏掉的隐含重要内容"
+    }
+  ]
+}

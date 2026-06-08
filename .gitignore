@@ -1,0 +1,8 @@
+# x-news
+data/*.txt
+data/*.json
+__pycache__/
+*.pyc
+.venv/
+.env
+reports/*.tmp.md
